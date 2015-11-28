@@ -1,0 +1,81 @@
+  @keyframes bounceupdown {
+                  from {
+                       transform: translate(0px,-100px);    
+                       -ms-transform: translate(0px,-100px); 
+                         -webkit-transform: translate(0px,-100px); 
+                  }
+
+                  to {
+                       transform: translate(0px,0px);   
+                        -ms-transform:translate(0px,0px);    
+                          -webkit-transform:translate(0px,0px);   
+                  }
+                }
+
+            @keyframes flipflip {
+                  from {
+                         -ms-transform: skew(20deg,10deg); /* IE 9 */
+                        -webkit-transform: skew(20deg,10deg); /* Safari */
+                        transform: skew(20deg,10deg); /* Standard syntax */
+                  }
+
+                  to {
+                         -ms-transform: skew(0deg,0deg); /* IE 9 */
+                        -webkit-transform: skew(0deg,0deg); /* Safari */
+                        transform: skew(0deg,0deg); /* Standard syntax */
+                  }
+                }
+
+            @keyframes dancer {
+                  0%{
+                       transform: translate(0px,-100px);    
+                       -ms-transform: translate(0px,-100px); 
+                         -webkit-transform: translate(0px,-100px); 
+                  }
+ 
+                  15% {
+                       transform: translate(0px,0px);   
+                        -ms-transform:translate(0px,0px);    
+                          -webkit-transform:translate(0px,0px);    
+                  }
+                   20% {
+                         -ms-transform: skew(-20deg,-10deg); /* IE 9 */
+                        -webkit-transform: skew(-20deg,-10deg); /* Safari */
+                        transform: skew(-20deg,-10deg); /* Standard syntax */   
+                  }
+                  60% { 
+                         -ms-transform: skew(0deg,0deg); /* IE 9 */
+                        -webkit-transform: skew(0deg,0deg); /* Safari */
+                        transform: skew(0deg,0deg); /* Standard syntax */ 
+                  }
+
+                  61% {
+                         -ms-transform: skew(20deg,10deg); /* IE 9 */
+                        -webkit-transform: skew(20deg,10deg); /* Safari */
+                        transform: skew(20deg,10deg); /* Standard syntax */   
+                  }
+                  100% {
+                     
+                         -ms-transform: skew(0deg,0deg); /* IE 9 */
+                        -webkit-transform: skew(0deg,0deg); /* Safari */
+                        transform: skew(0deg,0deg); /* Standard syntax */ 
+                  }
+                }
+ 
+                img.cute-dog{
+                     animation-duration: .5s;
+                      animation-name: bounceupdown;
+                      animation-iteration-count: 3;
+                      animation-direction: alternate;
+                      border:0px solid transparent;
+
+
+                } 
+
+                 img.cute-dog:focus, img.cute-dog:hover,img.cute-dog:active, img.cute-dog.jumping{ 
+                    animation-duration: .2s;
+                    animation-name: bounceupdown;
+                    animation-iteration-count: 10000;
+                    animation-direction: alternate;
+                      border:0px solid transparent;
+                  } 
