@@ -1,76 +1,15 @@
- <link href="http://seanloh.com/wp-content/uploads/2015/11/animation.css" rel="stylesheet" type="text/css" />
-<strong>RESULT: </strong>
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="animation.css" rel="stylesheet" type="text/css" />
 
-Try tapping or petting the dog. 
+</head>
+<body>
+
+<p>   <img id="cute-dog"class="cute-dog  " src="jumpdog.png" alt="cutedog" width="300" height="225"    /> </p> 
+
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script type="text/javascript" src="http://seanloh.com/wp-content/uploads/2015/11/animation.js"></script>
- 
- 
-
-
- <img id="cute-dog"class="cute-dog alignnone size-medium wp-image-103" src="http://seanloh.com/wp-content/uploads/2015/11/jump.png" alt="cutedogf" width="300" height="225"    /> 
-
-
-<strong>CODE: </strong> 
-<code>
-      @keyframes bounceupdown {
-                  from {
-                       transform: translate(0px,-100px);    
-                       -ms-transform: translate(0px,-100px); 
-                         -webkit-transform: translate(0px,-100px); 
-                  }
-
-                  to {
-                       transform: translate(0px,0px);   
-                        -ms-transform:translate(0px,0px);    
-                          -webkit-transform:translate(0px,0px);   
-                  }
-                }
-</code>
-
-            
- <code>
-             
-                img.cute-dog.jumping,img.cute-dog:hover,img.cute-dog:focus{ 
-                    animation-duration: .2s;
-                    animation-name: bounceupdown;
-                    animation-iteration-count: 10000;
-                    animation-direction: alternate;
-                  }
- </code>
-
-
-<strong>Explanation</strong>
-
-1) In this code, I named the animation movement as <code>bounceupdown</code> .
-
-2) Then ,    defined <code>from </code>  starting point css.
-
-3) After that ,  defined <code>to</code> as ending point css .
-
-4) Lastly, tagged its animation for an element css .
-
-                <code>img.cute-dog{
-                     animation-duration: .5s;
-                      animation-name: bounceupdown;
-                      animation-iteration-count: 3;
-                      animation-direction: alternate;
-
-
-                } </code>
-
-
-<strong>Cater For Mobile</strong>
-1) To cater for mobile , we must consider support for hover event.
-
-2) As mobile touch events do not support touch hover event, we will use a javascript to append a class to the element when clicked.
-
-3) We will give this class name <code>jumping</code>, and we will attached it to <code>img.cute-dog </code> element thus rendering the css declaration to <code>img.cute-dog.jumping</code>.
-
-4)  Below is the updated code for responsive mobile with touch events.
-
-You can find the full source code here:-
-<a href="https://github.com/seanlon/CssAnimation/tree/master/PetADog">https://github.com/seanlon/CssAnimation/tree/master/PetADog</a>
-
-<code> 
- </code>
+<script type="text/javascript" src="animation.js"></script> 
+</body>
+</html>
